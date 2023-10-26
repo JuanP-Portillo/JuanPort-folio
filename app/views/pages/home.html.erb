@@ -1,2 +1,48 @@
-<h1>Pages#home</h1>
-<p>Find me in app/views/pages/home.html.erb</p>
+<header>
+  <h1>JP Portillo</h1>
+  <nav>
+    <ul>
+      <li><a href="#">Home</a></li>
+      <li><a href="#">Services</a></li>
+      <li><a href="#">Pages</a></li>
+      <li><a href="#">Contact</a></li>
+    </ul>
+  </nav>
+</header>
+
+<div id="banner">
+  <img src="path/to/your/image.jpg" alt="Background Image">
+  <h1>Hello I'm Juan Pablo Portillo</h1>
+</div>
+
+<section class="services">
+    <h2>Services</h2>
+    <div class="card">
+        <h3>Google Ads</h3>
+        <p>Description of Google Ads service.</p>
+    </div>
+    <div class="card">
+        <h3>Web Development</h3>
+        <p>Description of Web Development service.</p>
+    </div>
+</section>
+
+<section class="contact">
+    <h2>Contact Us</h2>
+    <form action="/path/to/your/server/endpoint" method="POST">
+        <input type="text" name="email" placeholder="Email">
+        <input type="text" name="phone" placeholder="Phone">
+        <textarea name="message" placeholder="Your Message"></textarea>
+        <button type="submit">Send</button>
+    </form>
+</section>
+
+<footer>
+    <p>Phone: 123-456-7890</p>
+    <div>
+        <a href="mailto:your-email@example.com"><i class="fas fa-envelope"></i></a>
+        <a href="https://github.com/your-username"><i class="fab fa-github"></i></a>
+        <a href="https://www.instagram.com/your-username"><i class="fab fa-instagram"></i></a>
+        <a href="https://www.linkedin.com/in/your-username"><i class="fab fa-linkedin"></i></a>
+    </div>
+</footer>
