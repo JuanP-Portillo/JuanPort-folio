@@ -1,0 +1,53 @@
+#banner {
+  position: relative;
+  height: 100vh;
+  background: url('https://cdn.wallpapersafari.com/98/29/8CMcu7.jpg') no-repeat center center/cover;
+  background-attachment: fixed;
+  display: table-cell;
+  vertical-align: middle;
+  width: 100vw;
+}
+
+#banner h1 {
+  color: white;
+  font-family: $poppins-bold;
+}
+
+#banner p {
+  color: white;
+  font-family: $secondary-headers-font;
+}
+
+#banner h5 {
+  color: $statement;
+  font-family: $poppins-bold;
+}
+
+#banner .intro-position {
+  font-family: $secondary-headers-font;
+  font-size: 1.7rem;
+  line-height: 2.4rem;
+  text-transform: uppercase;
+  letter-spacing: .2rem;
+  color: #FFFFFF;
+  text-shadow: 0 0 6px rgba(0, 0, 0, 0.2)
+}
+
+#banner .intro-position span {
+  display: inline-block;
+}
+
+#banner .intro-position span:first-child::before {
+  content: "|";
+  text-align: center;
+  display: inline-block;
+  padding: 0 14px 0 8px;
+  color: rgba(255, 255, 255, 0.3);
+}
+#banner .intro-position .span::after {
+  content: "|";
+  text-align: center;
+  display: inline-block;
+  padding: 0 8px 0 14px;
+  color: rgba(255, 255, 255, 0.3);
+}
