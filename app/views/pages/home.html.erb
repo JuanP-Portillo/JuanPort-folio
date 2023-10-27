@@ -1,48 +1,76 @@
-<header>
-  <h1>JP Portillo</h1>
-  <nav>
-    <ul>
-      <li><a href="#">Home</a></li>
-      <li><a href="#">Services</a></li>
-      <li><a href="#">Pages</a></li>
-      <li><a href="#">Contact</a></li>
-    </ul>
-  </nav>
+<header class="container-fluid bg-dark text-white py-2">
+    <div class="container">
+        <h1>JP Portillo</h1>
+        <nav class="d-flex justify-content-around">
+            <ul class="list-unstyled d-flex justify-content-around mb-0">
+                <li class="mx-2"><a href="#" class="text-white">Home</a></li>
+                <li class="mx-2"><a href="#" class="text-white">Services</a></li>
+                <li class="mx-2"><a href="#" class="text-white">Pages</a></li>
+                <li class="mx-2"><a href="#" class="text-white">Contact</a></li>
+            </ul>
+        </nav>
+    </div>
 </header>
 
-<div id="banner">
-  <img src="path/to/your/image.jpg" alt="Background Image">
-  <h1>Hello I'm Juan Pablo Portillo</h1>
+<div id="banner" class="text-center">
+  <div class="row">
+    <div class="col-twelve">
+      <h5>Hello, world</h5>
+      <h1 style="font-size: 84px;">I'm Juan Pablo Portillo.</h1>
+      <p class="intro-position">
+        <span>FULL-STACK DEVELOPER</span>
+      </p>
+    </div>
+  </div>
 </div>
 
-<section class="services">
-    <h2>Services</h2>
-    <div class="card">
-        <h3>Google Ads</h3>
-        <p>Description of Google Ads service.</p>
-    </div>
-    <div class="card">
-        <h3>Web Development</h3>
-        <p>Description of Web Development service.</p>
+<section class="services container">
+    <h2 class="text-center">Services</h2>
+    <div class="row">
+        <div class="col-md-6">
+            <div class="card mb-3">
+                <div class="card-body">
+                    <h3>Google Ads</h3>
+                    <p>Description of Google Ads service.</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="card mb-3">
+                <div class="card-body">
+                    <h3>Web Development</h3>
+                    <p>Description of Web Development service.</p>
+                </div>
+            </div>
+        </div>
     </div>
 </section>
 
-<section class="contact">
+
+<section class="contact container">
     <h2>Contact Us</h2>
     <form action="/path/to/your/server/endpoint" method="POST">
-        <input type="text" name="email" placeholder="Email">
-        <input type="text" name="phone" placeholder="Phone">
-        <textarea name="message" placeholder="Your Message"></textarea>
-        <button type="submit">Send</button>
+        <div class="form-group">
+            <input type="text" class="form-control" name="email" placeholder="Email">
+        </div>
+        <div class="form-group">
+            <input type="text" class="form-control" name="phone" placeholder="Phone">
+        </div>
+        <div class="form-group">
+            <textarea class="form-control" name="message" placeholder="Your Message"></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary">Send</button>
     </form>
 </section>
 
-<footer>
-    <p>Phone: 123-456-7890</p>
-    <div>
-        <a href="mailto:your-email@example.com"><i class="fas fa-envelope"></i></a>
-        <a href="https://github.com/your-username"><i class="fab fa-github"></i></a>
-        <a href="https://www.instagram.com/your-username"><i class="fab fa-instagram"></i></a>
-        <a href="https://www.linkedin.com/in/your-username"><i class="fab fa-linkedin"></i></a>
+<footer class="container-fluid bg-dark text-white py-3">
+    <div class="container">
+        <p class="text-center">Phone: 123-456-7890</p>
+        <div class="d-flex justify-content-center">
+            <a href="mailto:your-email@example.com" class="mx-2"><i class="fas fa-envelope"></i></a>
+            <a href="https://github.com/your-username" class="mx-2"><i class="fab fa-github"></i></a>
+            <a href="https://www.instagram.com/your-username" class="mx-2"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.linkedin.com/in/your-username" class="mx-2"><i class="fab fa-linkedin"></i></a>
+        </div>
     </div>
 </footer>
