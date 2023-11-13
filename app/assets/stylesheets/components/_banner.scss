@@ -1,12 +1,55 @@
 #banner {
-  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   height: 100vh;
   background: url('https://cdn.wallpapersafari.com/98/29/8CMcu7.jpg') no-repeat center center/cover;
   background-attachment: fixed;
-  display: table-cell;
-  vertical-align: middle;
-  width: 100vw;
 }
+
+.header-container {
+  background-color: transparent;
+  margin-top: 20px;
+}
+
+#banner-row {
+  display: grid;
+  place-items: center;
+  height: 100%;
+}
+
+#banner-col-twelve {
+  text-align: center;
+}
+
+.banner-heading {
+  font-size: 3.6rem;
+  color: white;
+}
+
+.intro-position {
+  font-family: $secondary-headers-font;
+  font-size: 1.7rem;
+  line-height: 2.4rem;
+  text-transform: uppercase;
+  letter-spacing: .2rem;
+  color: #FFFFFF;
+  text-shadow: 0 0 6px rgba(0, 0, 0, 0.2);
+}
+
+.intro-position span {
+  display: inline-block;
+}
+
+.intro-position span:first-child::before, .intro-position .span::after {
+  content: "|";
+  text-align: center;
+  display: inline-block;
+  padding: 0 8px;
+  color: rgba(255, 255, 255, 0.3);
+}
+
 
 #banner h1 {
   color: white;
@@ -50,4 +93,8 @@
   display: inline-block;
   padding: 0 8px 0 14px;
   color: rgba(255, 255, 255, 0.3);
+}
+
+.banner-heading {
+  font-size: 3.6rem;
 }

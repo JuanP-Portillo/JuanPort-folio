@@ -1,0 +1,22 @@
+<nav class="nav-bar">
+  <div class="menuLogo">Logo</div>
+  <button class="toggle-button" onclick="toggleMenu()">☰</button>
+  <div class="menuLinks" id="menuLinks">
+    <a href="" class="menu-link">About</a>
+    <a href="" class="menu-link">Projects</a>
+    <a href="" class="menu-link">Team</a>
+    <a href="" class="menu-link">Contacts</a>
+  </div>
+</nav>
+
+
+<script>
+function toggleMenu() {
+  var menuLinks = document.getElementById("menuLinks");
+  if (menuLinks.style.display === "none") {
+    menuLinks.style.display = "block";
+  } else {
+    menuLinks.style.display = "none";
+  }
+}
+</script>
