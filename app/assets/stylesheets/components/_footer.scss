@@ -55,7 +55,9 @@ body{margin-top:20px;}
     box-shadow: 2.5px 4.33px 15px 0px rgba(204, 0, 95, 0.4);
 }
 .deneb_footer .widget_wrapper .widget_link ul li {
-    margin-bottom: 5px;
+  margin-bottom: 5px;
+  list-style-type: none;
+  padding-left: 0 !important;
 }
 .deneb_footer .widget_wrapper .widget_link ul li a {
     text-transform: capitalize;
@@ -67,7 +69,7 @@ body{margin-top:20px;}
 }
 .deneb_footer .widget_wrapper .widget_contact .contact_info .single_info {
     max-width: 250px;
-    display: flex;
+
     flex-wrap: wrap;
     margin-bottom: 20px;
 }
@@ -163,4 +165,17 @@ body{margin-top:20px;}
 .deneb_cta .cta_wrapper .button_box .deneb_btn:hover,
 .deneb_cta .cta_wrapper .button_box .deneb_btn:focus {
     box-shadow: 2.5px 4.33px 15px 0px rgba(0, 0, 0, 0.15);
+}
+
+.col-lg-4.col-md-6.col-sm-12 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+ol, ul, dl {
+  margin-top: 0;
+  margin-bottom: 1rem;
+  padding-left: 0;
 }

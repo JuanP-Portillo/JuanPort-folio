@@ -3,17 +3,45 @@ body {
   font-family: $secondary-body-font;
   margin: 0;
   padding: 0;
+  background-image: url("https://res.cloudinary.com/dubrm4blh/image/upload/v1706911231/second-cg_dof5mj.svg");
+
 }
 
+.services {
+  margin-top: 5rem;
+  border-top:rgba(0, 0, 0, 0.3);
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  border-bottom: none;
+}
+
+.contact {
+  border-bottom:rgba(0, 0, 0, 0.3);
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  border-top: none;
+}
 .services, .contact {
   padding: 20px;
-  border: 1px solid #ddd;
+  background-color: rgba(0, 0, 0, 0.3);
+  position: relative;
+  overflow: hidden;
 }
 
+
+.services, .text-center {
+  color:white;
+}
+
+.contact h2 {
+  text-align: center;
+  color: white;
+}
 .contact form {
   display: flex;
   flex-direction: column;
   gap: 10px;
+
 }
 
 footer {
