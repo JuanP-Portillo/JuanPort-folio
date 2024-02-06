@@ -1,0 +1,26 @@
+.nav-bar {
+  width: 100vw;
+  background-color: transparent;
+}
+ .menuLogo {
+  color: $statement;
+ }
+
+ .menu-link {
+  text-decoration: none;
+  margin-left: 3rem;
+  margin-right: 3rem;
+ }
+
+ .toggle-button {
+  display: none;
+}
+
+@media screen and (max-width: 600px) {
+  .menuLinks {
+    display: none;
+  }
+  .toggle-button {
+    display: block;
+  }
+}
